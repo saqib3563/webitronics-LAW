@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-2 col-12">
+                        <div>
+                            <a href="#"
+                                ><img
+                                    src="Assets/logo.png"
+                                    width="253"
+                                    height="57"
+                                    alt=""
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <ul class="list-item">
+                            <li><a href="" aria-current="page">Portfolio</a></li>
+                            <li><a href="" aria-current="page">Pricing</a></li>
+                            <li><a href="" aria-current="page">Testimonial</a></li>
+                            <li><a href="" aria-current="page">FAQ's</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="call-btn d-lg-block">
+                            <a href="tel:(855) 827-9646" title="Contact Us"
+                                ><img
+                                    src="Assets/phone-icon.png"
+                                    width="30"
+                                    height="30"
+                                    alt=""
+                                />(855) 827-9646</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="main-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-sm-8 mb-5">
+                        <div class="banner-content">
+                            <h2>
+                                <span>Unlock Ecommerce</span> Success <br />
+                                with Stunning Shopify <br />
+                                Stores
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="points">
+                            <ul class="list-wrap">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    Easy Setup & User-Friendly Interface
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    Scalable and Flexible Business Solution
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    Reliable and Secure Shopify Websites
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <form action="">
+                            <div class="contact-form">
+                                <h3>Request a Quote</h3>
+                                <div class="form-group">
+                                    <img
+                                        src="Assets/Placeholder.png"
+                                        width="14"
+                                        height="14"
+                                        alt=""
+                                    />
+                                    <input
+                                        type="text"
+                                        placeholder="Complete Name"
+                                        class="form-control inp-field"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <img
+                                        src="Assets/email-icon.webp"
+                                        width="14"
+                                        height="14"
+                                        alt=""
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder="Email Address"
+                                        class="form-control inp-field"
+                                    />
+                                </div>
+                                <div class="form-group">
+                                    <img
+                                        src="Assets/Placeholder (1).png"
+                                        width="14"
+                                        height="14"
+                                        alt=""
+                                    />
+                                    <input
+                                        type="number"
+                                        placeholder="Phone No"
+                                        class="form-control inp-field"
+                                    />
+                                </div>
+                                <div
+                                    class="form-group form-wrap"
+                                    style="gap: 10px"
+                                >
+                                    <img
+                                        src="Assets/Placeholder (3).png"
+                                        width="14"
+                                        height="14"
+                                        alt=""
+                                    />
+                                    <textarea
+                                        name=""
+                                        id=""
+                                        placeholder="Write a message"
+                                        class="msg-field"
+                                    ></textarea>
+                                </div>
+                                <button type="submit" class="form-btn">
+                                    LET’S TALK
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="main-slider">
+                            <div class="slider-content">
+                                <div class="baner slider1">
+                                    <div
+                                        class="slider-images"
+                                        style="
+                                            width: 100%;
+                                            display: inline-block;
+                                        "
+                                    >
+                                        <img
+                                            class="img-fluid banner-side-img"
+                                            width="1300"
+                                            height="719"
+                                            src="Assets/slider-1-Photo.jpg"
+                                        />
+                                    </div>
+                                    <div
+                                        class="slider-images"
+                                        style="
+                                            width: 100%;
+                                            display: inline-block;
+                                        "
+                                    >
+                                        <img
+                                            class="img-fluid banner-side-img"
+                                            width="1300"
+                                            height="719"
+                                            src="Assets/slider-1-Photo.jpg"
+                                        />
+                                    </div>
+                                    <div
+                                        class="slider-images"
+                                        style="
+                                            width: 100%;
+                                            display: inline-block;
+                                        "
+                                    >
+                                        <img
+                                            class="img-fluid banner-side-img"
+                                            width="1300"
+                                            height="719"
+                                            src="Assets/slider-1-Photo.jpg"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="key-sec">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="sec-head text-center"
+                        data-aos="zoom-in"
+                        data-aos-duration="1600"
+                    >
+                        <h1>Key Features</h1>
+                    </div>
+                    <p class="sec-para">
+                        Transform Your Buisness With Stunning Shopify Solutions.
+                    </p>
+                    <div class="autoplay">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="key-sec-box">
+                                <a href="#"
+                                    ><span
+                                        >Check avaibility
+                                        <i
+                                            class="fa-solid fa-angle-right"
+                                            style="color: #ff5722"
+                                        ></i> </span
+                                    ><i
+                                        class="fa-solid fa-angle-right"
+                                        style="color: #ffffff"
+                                    ></i
+                                ></a>
+                                <div class="key-sec-hover-box">
+                                    <h2 class="mb-5 mt-5">
+                                        User-Friendly <br />
+                                        Website Layout
+                                    </h2>
+                                    <p class="para">
+                                        Our experts create user-friendly website
+                                        layouts that's easy to understand for
+                                        visitors. This means when people visit
+                                        your site, they won't get lost and will
+                                        quickly find what they're looking for.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="key-sec-box">
+                                <a href="#"><span>Check avaibility
+                                    <i class="fa-solid fa-angle-right" style="color: #ff5722"></i> </span>
+                                    <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+                                </a>
+                                <div class="key-sec-hover-box">
+                                    <h2 class="mb-5 mt-5">
+                                        User-Friendly <br>Website Layout
+                                    </h2>
+                                    <p class="para">
+                                        Our experts create user-friendly website
+                                        layouts that's easy to understand for
+                                        visitors. This means when people visit
+                                        your site, they won't get lost and will
+                                        quickly find what they're looking for.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="key-sec-box">
+                                <a href="#"
+                                    ><span
+                                        >Check avaibility
+                                        <i
+                                            class="fa-solid fa-angle-right"
+                                            style="color: #ff5722"
+                                        ></i> </span
+                                    ><i
+                                        class="fa-solid fa-angle-right"
+                                        style="color: #ffffff"
+                                    ></i
+                                ></a>
+                                <div class="key-sec-hover-box">
+                                    <h2 class="mb-5 mt-5">
+                                        User-Friendly <br />
+                                        Website Layout
+                                    </h2>
+                                    <p class="para">
+                                        Our experts create user-friendly website
+                                        layouts that's easy to understand for
+                                        visitors. This means when people visit
+                                        your site, they won't get lost and will
+                                        quickly find what they're looking for.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <div class="key-sec-box">
+                                <a href="#"
+                                    ><span
+                                        >Check avaibility
+                                        <i
+                                            class="fa-solid fa-angle-right"
+                                            style="color: #ff5722"
+                                        ></i> </span
+                                    ><i
+                                        class="fa-solid fa-angle-right"
+                                        style="color: #ffffff"
+                                    ></i
+                                ></a>
+                                <div class="key-sec-hover-box">
+                                    <h2 class="mb-5 mt-5">
+                                        User-Friendly <br />
+                                        Website Layout
+                                    </h2>
+                                    <p class="para">
+                                        Our experts create user-friendly website
+                                        layouts that's easy to understand for
+                                        visitors. This means when people visit
+                                        your site, they won't get lost and will
+                                        quickly find what they're looking for.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Portfolio-sec">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12">
+                        <div class="portfolio-content">
+                            <img src="Assets/portfolio-Icon.png" alt="" />
+                            <h2
+                                class="sec-head"
+                                data-aos="zoom-in"
+                                data-aos-duration="1600"
+                            >
+                                My Recent Work
+                            </h2>
+                            <p class="text-start">
+                                Designed some empty state screens in kawaii
+                                <br />
+                                style for the popular sheepify app
+                            </p>
+                            <h5>View Case Study</h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="row portfolio-slider">
+                            <div class="portfolio-banner">
+                                <img
+                                    src="Assets/portfolio-thumb5.webp"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="portfolio-banner">
+                                <img
+                                    src="Assets/portfolio-thumb6.webp"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="portfolio-banner">
+                                <img
+                                    src="Assets/portfolio-thumb7.webp"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing-sec">
+            <div class="container">
+                <h2
+                    class="sec-head text-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="1600"
+                >
+                    Pricing Plans Without Hidden Charges
+                </h2>
+                <div class="pricing-sec-img text-center">
+                    <img src="Assets/portfolio-Icon.png" alt="" />
+                </div>
+                <div class="row pricing-slider">
+                    <div class="col-lg-4">
+                        <div class="pricing-box text-center">
+                            <div class="pricing-head">
+                                <h2>Single Plan</h2>
+                                <h3>For single person</h3>
+                            </div>
+                            <div class="seprate"></div>
+                            <div class="price">$8.00</div>
+                            <ul class="package-list">
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                            </ul>
+                            <button class="pricing-box-btn">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pricing-box text-center">
+                            <div class="pricing-head">
+                                <h2>Group Plan</h2>
+                                <h3>For group of peoples</h3>
+                            </div>
+                            <div class="seprate"></div>
+                            <div class="price">$16.00</div>
+                            <ul class="package-list">
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                            </ul>
+                            <button class="pricing-box-btn">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pricing-box text-center">
+                            <div class="pricing-head">
+                                <h2>Business Plan</h2>
+                                <h3>For business industry</h3>
+                            </div>
+                            <div class="seprate"></div>
+                            <div class="price">$26.00</div>
+                            <ul class="package-list">
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                            </ul>
+                            <button class="pricing-box-btn">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="pricing-box text-center">
+                            <div class="pricing-head">
+                                <h2>Single Plan</h2>
+                                <h3>For single person</h3>
+                            </div>
+                            <div class="seprate"></div>
+                            <div class="price">$8.00</div>
+                            <ul class="package-list">
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                                <li>Serious car crash</li>
+                                <li>Truck accidents</li>
+                                <li>Semi-truck collision</li>
+                                <li>Serious car crash</li>
+                            </ul>
+                            <button class="pricing-box-btn">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review-sec">
+            <div class="container">
+                <h1
+                    class="sec-head text-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="1600"
+                >
+                    Client Opinions & Reviews
+                </h1>
+                <div class="text-center">
+                    <img src="Assets/portfolio-Icon.png" alt="" class="r-img" />
+                </div>
+                <div class="row review-slider">
+                    <div class="col-lg-3">
+                        <div class="review-box">
+                            <div class="review-content">
+                                <img
+                                    src="Assets/review.png"
+                                    alt=""
+                                    class="align-items-start"
+                                />
+                                <p class="text-start mt-3 mt-lg-4">
+                                    There are of Lorem Ipsum <br />
+                                    available, but the majority <br />
+                                    have su alteration in some <br />
+                                    form, by injected oir which <br />
+                                    don't look even slightly <br />
+                                    believable.
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <img src="Assets/Avatar.png" alt="" />
+                                <div>
+                                    <h4>Nattasha</h4>
+                                    <h5>Junior Lawyer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="review-box review-box2">
+                            <div class="review-content">
+                                <img
+                                    src="Assets/review.png"
+                                    alt=""
+                                    class="align-items-start"
+                                />
+                                <p class="text-start mt-3 mt-lg-4">
+                                    There are of Lorem Ipsum <br />
+                                    available, but the majority <br />
+                                    have su alteration in some <br />
+                                    form, by injected oir which <br />
+                                    don't look even slightly <br />
+                                    believable.
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mb-3">
+                                <img src="Assets/Avatar.png" alt="" />
+                                <div>
+                                    <h4>Minci pall</h4>
+                                    <h5>Consultant</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="review-box">
+                            <div class="review-content">
+                                <img
+                                    src="Assets/review.png"
+                                    alt=""
+                                    class="align-items-start"
+                                />
+                                <p class="text-start mt-3 mt-lg-4">
+                                    There are of Lorem Ipsum <br />
+                                    available, but the majority <br />
+                                    have su alteration in some <br />
+                                    form, by injected oir which <br />
+                                    don't look even slightly <br />
+                                    believable.
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mt-3">
+                                <img src="Assets/Avatar.png" alt="" />
+                                <div>
+                                    <h4>Julia Rose</h4>
+                                    <h5>Consultant</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="review-box review-box2">
+                            <div class="review-content">
+                                <img
+                                    src="Assets/review.png"
+                                    alt=""
+                                    class="align-items-start"
+                                />
+                                <p class="text-start mt-3 mt-lg-4">
+                                    There are of Lorem Ipsum <br />
+                                    available, but the majority <br />
+                                    have su alteration in some <br />
+                                    form, by injected oir which <br />
+                                    don't look even slightly <br />
+                                    believable.
+                                </p>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center mb-3">
+                                <img src="Assets/Avatar.png" alt="" />
+                                <div>
+                                    <h4>John David</h4>
+                                    <h5>Designer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="cta-content">
+                            <img src="Assets/dollar.webp" alt="" />
+                            <h2
+                                class="sec-head"
+                                data-aos="zoom-in"
+                                data-aos-duration="1600"
+                            >
+                                Sign Up Now!
+                            </h2>
+                            <p class="text-start">
+                                Sign up today and let our expert designers
+                                transform your <br />
+                                vision into a beautiful online store.
+                            </p>
+                            <a href="">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq-sec">
+            <div class="container">
+                <h1
+                    class="sec-head text-center"
+                    data-aos="zoom-in"
+                    data-aos-duration="1600"
+                >
+                    Frequently Asked Question!
+                </h1>
+                <div class="text-center mb-5">
+                    <img src="Assets/Icon.png" alt="" />
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="faq-box">
+                            <h2>
+                                What do I need so you can start <br />
+                                working with my Shopify store <br />
+                                design?
+                            </h2>
+                            <h6>
+                                You need a clear understanding of your branding
+                                as the best design <br />
+                                should align with your brand identity. Upon your
+                                brand vision, we <br />
+                                will create a logo and a bespoke design for the
+                                Shopify website.
+                            </h6>
+                        </div>
+                        <div class="faq-box">
+                            <h2>
+                                How can I avoid being sued if a <br />
+                                claim is made against me?
+                            </h2>
+                            <h6>
+                                No one can stop a lawsuit from being filed.
+                                However, if there is a <br />
+                                legitimate dispute that arises and a claim made
+                                against you, <br />
+                                consult a lawyer behind-the-scenes work is being
+                                completed so <br />
+                                that on the day your matter is ready, nothing
+                                will be overlooked.
+                            </h6>
+                        </div>
+                        <div class="faq-box">
+                            <h2>
+                                Why should I have a lawyer <br />
+                                representing me during divorce?
+                            </h2>
+                            <h6>
+                                While many individuals proceed through the
+                                divorce process, <br />
+                                having the help of an attorney with family law
+                                experience can go <br />
+                                a long way toward protecting your interests.
+                                Florida’s family laws <br />
+                                have developed over many decades and are
+                                complicated.
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-box">
+                            <h2>
+                                How secure is Shopify for online <br />
+                                transactions?
+                            </h2>
+                            <h6>
+                                Our leadership team at the Thurman Law firm will
+                                determine which <br />
+                                attorney can best represent you in handling your
+                                case. It may not <br />
+                                be possible, or advantageous, to have one
+                                attorney handle all of <br />
+                                your legal matters of the case, but from time to
+                                time.
+                            </h6>
+                        </div>
+                        <div class="faq-box">
+                            <h2>
+                                What is the difference between <br />
+                                divorce and legal separation?
+                            </h2>
+                            <h6>
+                                In addition to ending your marriage, a divorce
+                                addresses all issues <br />
+                                within the marriage, including property,
+                                finances, and child <br />
+                                -related issues. This is the most common way to
+                                deal with marital <br />
+                                issues, as Florida does not recognize legal
+                                separation.
+                            </h6>
+                        </div>
+                        <div class="faq-box">
+                            <h2>
+                                Do I need an attorney to start a <br />
+                                business?
+                            </h2>
+                            <h6>
+                                There are certain matters that are fairly
+                                straightforward or not <br />
+                                unduly difficult to learn and, therefore, do not
+                                require the <br />
+                                services of an attorney, like writing a business
+                                plan, researching <br />
+                                and picking a name for your business or
+                                reserving a domain.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h1
+                            class="sec-head text-center"
+                            data-aos="zoom-in"
+                            data-aos-duration="1600"
+                        >
+                            Get in touch with us today! We'd love to hear from
+                            you.
+                        </h1>
+                        <p class="text-center">
+                            Don't let your competitors steal the spotlight.
+                            Contact our experts today and turn your dream <br />
+                            into a stunning, successful website
+                        </p>
+                        <button href="" class="text-center" title="Click To Contact Us">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row T-B_border">
+                        <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                            <p>
+                                Copyright © <span>Webitronics</span> | All
+                                Rights Reserved
+                            </p>
+                        </div>
+                        <div
+                            class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center justify-content-end END_1"
+                        >
+                            <p><span>Follow :</span></p>
+                            <img src="Assets/instagram.png" alt="" />
+                            <img src="Assets/facebook.png" alt="" />
+                            <img src="Assets/twitter.png" alt="" />
+                            <img src="Assets/pinterest.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+    <script>
+        AOS.init();
+     </script>
+    </body>
+</html>
